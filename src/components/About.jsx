@@ -3,6 +3,8 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import Img from "../assets/board.jpg";
+import { Link } from "react-scroll";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -19,9 +21,11 @@ const About = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.3 }}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-          ></motion.div>
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 h-[500px] mix-blend-lighten bg-top"
+          >
+            <img src={Img} alt="about" className="object-cover w-full h-full" />
+          </motion.div>
           {/* text */}
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -30,9 +34,9 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
+            <h2 className="h2 text-reseda">about me.</h2>
             <h3 className="h3 mb-4">
-              I'm a Freelance Front-end Developer with over 5 years of
+              I'm a freelance front-end developer with over 2 years of
               experience.
             </h3>
             <p className="mb-6">
@@ -74,9 +78,17 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact Me</button>
+            <Link
+                to="contact"
+                className="btn btn-lg italic cursor-pointer text-center"
+                smooth={true}
+                spy={true}
+                activeClass="active"
+              >
+              contact me
+              </Link>
               <a href="#" className="text-gradient btn-link">
-                My Portfolio
+                my portfolio
               </a>
             </div>
           </motion.div>

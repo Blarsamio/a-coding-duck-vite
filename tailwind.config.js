@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Inter',
+      secondary: 'League Spartan',
+      tertiary: 'Montserrat',
     },
     container: {
       padding: {
@@ -21,12 +21,19 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0a0a0a',
-        accent: '#B809C3',
+        accent: '#C42847',
+        snow: '#FBF5F3',
+        mint: '#63A375',
+        rusty: '#DE3C4B',
+        deft: '#434371',
+        black: '#373636',
+        isabelline: '#F1F0EC',
+        bone: '#DBD6C3',
+        reseda: '#708361'
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/about.png')",
-        services: "url('./assets/services.png')",
+        services: "url('./assets/office.jpeg')",
       },
     },
   },

@@ -16,11 +16,11 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
-                Get in touch
+              <h4 className="text-xl text-reseda font-medium mb-2 tracking-wide">
+                get in touch.
               </h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br />
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 font-secondary font-bold">
+                let's work <br />
                 together!
               </h2>
             </div>
@@ -31,23 +31,23 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border flex flex-col gap-y-6 pb-24 p-6 items-start"
           >
             <input
-              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-white focus:border-accent"
+              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda"
               type="text"
-              placeholder="Your Name"
+              placeholder="your name"
             />
             <input
-              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-white focus:border-accent"
+              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda"
               type="text"
-              placeholder="Your Email"
+              placeholder="your email"
             />
             <textarea
-              className="bg-transparent border-b py-12 outline-none w-full transition-all placeholder:text-white focus:border-accent resize-none mb-12"
-              placeholder="Your message"
+              className="bg-transparent border-b py-12 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda resize-none mb-12"
+              placeholder="your message"
             ></textarea>
-            <button className="btn btn-lg">Send Message</button>
+            <button className="btn btn-lg">send message</button>
           </motion.form>
         </div>
       </div>

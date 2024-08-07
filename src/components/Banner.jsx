@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
+import Image from "../assets/me.jpg";
 import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -20,27 +21,29 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
-              BEN <span>AIDEN</span>
+              patricio <br /><span>pérez herrero</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold leading-[1]"
             >
-              <span className="text-white"> I'm a </span>
+              <span className="text-black"> i'm a </span>
               <TypeAnimation
-                className="text-accent"
+                className="text-reseda lowercase"
                 sequence={[
-                  "Developer",
+                  "developer",
                   2000,
-                  "Designer",
+                  "designer",
                   2000,
-                  "Freelancer",
+                  "freelancer",
                   2000,
+                  'teacher',
+                  2000
                 ]}
                 speed={50}
                 wrapper="span"
@@ -52,10 +55,10 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-8 max-w-lg mx-auto lg:mx-0 text-[20px]"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              feugiat, libero auctor.
+              i like bringing life to code, <br />
+              and code to life.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -64,9 +67,17 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <Link
+                to="contact"
+                className="btn btn-lg italic cursor-pointer text-center"
+                smooth={true}
+                spy={true}
+                activeClass="active"
+              >
+              contact me
+              </Link>
+              <a href="#" className="text-gradient btn-link hover:text-reseda hover:underline hover:underline-offset-[0.2em] ">
+                my portfolio
               </a>
             </motion.div>
             <motion.div
