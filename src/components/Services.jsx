@@ -74,26 +74,23 @@ const Services = () => {
                 const { name, description, link } = service;
                 return (
                   <div
-                    className="border-b border-black/20 h-[146px] lg:mb-[18px] flex"
+                    className="border-b border-black/20 h-[146px] lg:mb-[18px] flex dark:border-isabelline/50"
                     key={index}
                   >
-                    <div className="max-w-[476px]">
+                    <div className="max-w-[576px]">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6 text-reseda">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-tight text-base lg:text-xl">
+                      <p className="font-secondary leading-tight text-base lg:text-xl dark:text-isabelline">
                         {description}
                       </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end flex-end">
                       <a
                         href="#"
-                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center dark:bg-black dark:text-isabelline dark:hover:text-reseda dark:hover:border-reseda dark:hover:border-2"
                       >
                         <BsArrowUpRight />
-                      </a>
-                      <a href="#" className="text-gradient text-sm hidden md:block lg:block">
-                        {link}
                       </a>
                     </div>
                   </div>

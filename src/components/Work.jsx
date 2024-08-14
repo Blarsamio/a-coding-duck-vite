@@ -22,7 +22,7 @@ const Work = () => {
               <h2 className="h2 leading-tight text-reseda">
                 my latest work
               </h2>
-              <p className="max-w-sm mb-16">
+              <p className="max-w-sm mb-16 dark:text-isabelline">
                 here you can find some of the projects I've worked on or collaborated with recently.
               </p>
               <button className="btn btn-sm self-start hidden md:block">view all projects</button>
@@ -33,7 +33,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* image */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 mix-blend-lighten"
                 src={Img1}
                 alt="portfolio"
               />
@@ -60,7 +60,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* image */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 mix-blend-lighten"
                 src={Img2}
                 alt="portfolio"
               />
@@ -80,7 +80,7 @@ const Work = () => {
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 {/* image */}
                 <img
-                  className="group-hover:scale-125 transition-all duration-500"
+                  className="group-hover:scale-125 transition-all duration-500 mix-blend-lighten"
                   src={Img3}
                   alt="portfolio"
                 />

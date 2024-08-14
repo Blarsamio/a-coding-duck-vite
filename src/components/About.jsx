@@ -3,7 +3,6 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img from "../assets/board.jpg";
 import { Link } from "react-scroll";
 
 const About = () => {
@@ -34,10 +33,10 @@ const About = () => {
             className="flex-1 flex flex-col justify-center"
           >
             <h2 className="h2 text-reseda">about me.</h2>
-            <h3 className="h3 mb-4">
+            <h3 className="h3 mb-4 dark:text-isabelline">
               I'm a full-stack web developer and teacher with over 3 years of experience.
             </h3>
-            <p className="mb-6">
+            <p className="mb-6 dark:text-isabelline">
               I specialize in creating fast and responsive websites that are
               accessible to everyone. I have a strong passion for web
               development and I love to stay up-to-date with the latest
@@ -47,30 +46,30 @@ const About = () => {
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
+                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2 dark:text-isabelline">
                   {inView ? (
                     <CountUp start={0} end={3} duration={3} className="" />
                   ) : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] dark:text-isabelline">
                   years of <br /> experience
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
+                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2 dark:text-isabelline">
                   {inView ? <CountUp start={0} end={200} duration={3} /> : null}
                   +
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] dark:text-isabelline">
                   students <br /> taught
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
+                <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2 dark:text-isabelline">
                   {inView ? <CountUp start={0} end={30} duration={3} /> : null}
                   +
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] dark:text-isabelline">
                   workshops <br /> given
                 </div>
               </div>

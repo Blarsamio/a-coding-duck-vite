@@ -61,7 +61,7 @@ const Contact = () => {
               <h4 className="text-xl text-reseda font-medium mb-2 tracking-wide">
                 get in touch.
               </h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 font-secondary font-bold">
+              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 font-secondary font-bold dark:text-isabelline">
                 let's work <br />
                 together!
               </h2>
@@ -78,7 +78,7 @@ const Contact = () => {
             onSubmit={sendEmail}
           >
             <input
-              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda"
+              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda dark:placeholder:text-bone/50 dark:focus:placeholder:text-reseda dark:text-bone"
               type="text"
               name="user_name"
               placeholder="your name"
@@ -86,7 +86,7 @@ const Contact = () => {
               onChange={handleChange}
             />
             <input
-              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda"
+              className="bg-transparent border-b py-3 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda dark:placeholder:text-bone/50 dark:focus:placeholder:text-reseda dark:text-bone"
               type="email"
               name="user_email"
               placeholder="your email"
@@ -94,7 +94,7 @@ const Contact = () => {
               onChange={handleChange}
             />
             <textarea
-              className="bg-transparent border-b py-12 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda resize-none mb-12"
+              className="bg-transparent border-b py-12 outline-none w-full transition-all placeholder:text-reseda focus:border-reseda dark:placeholder:text-bone/50 dark:focus:placeholder:text-reseda dark:text-bone resize-none mb-12"
               name="message"
               placeholder="your message"
               value={formData.message}

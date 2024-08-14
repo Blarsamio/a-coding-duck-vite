@@ -21,7 +21,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[100px] dark:text-isabelline mb-4"
             >
               patricio <br /><span>pérez herrero</span>
             </motion.h1>
@@ -32,7 +32,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold leading-[1]"
             >
-              <span className="text-black"> i'm a </span>
+              <span className="text-black dark:text-isabelline"> i'm a </span>
               <TypeAnimation
                 className="text-reseda lowercase"
                 sequence={[
@@ -55,7 +55,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0 text-[20px]"
+              className="mb-8 max-w-lg mx-auto lg:mx-0 text-[20px] dark:text-isabelline"
             >
               i like bringing life to code, <br />
               and code to life.
@@ -69,14 +69,14 @@ const Banner = () => {
             >
               <Link
                 to="contact"
-                className="btn btn-lg italic cursor-pointer text-center"
+                className="btn btn-lg italic cursor-pointer text-center "
                 smooth={true}
                 spy={true}
                 activeClass="active"
               >
               contact me
               </Link>
-              <a href="#" className="text-gradient btn-link hover:text-reseda hover:underline hover:underline-offset-[0.2em] ">
+              <a href="#" className="text-gradient btn-link dark:text-isabelline hover:text-reseda hover:underline hover:underline-offset-[0.2em] ">
                 my portfolio
               </a>
             </motion.div>
@@ -87,13 +87,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#" className="text-white">
+              <a href="#" className="text-isabelline">
                 <FaYoutube />
               </a>
-              <a href="#" className="text-white">
+              <a href="#" className="text-isabelline">
                 <FaGithub />
               </a>
-              <a href="#" className="text-white">
+              <a href="#" className="text-isabelline">
                 <FaDribbble />
               </a>
             </motion.div>
