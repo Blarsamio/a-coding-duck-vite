@@ -6,7 +6,7 @@ const Nav = () => {
     <nav className="fixed bottom-2 lg:bottom-0 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         {/* nav */}
-        <div className="w-full bg-isabelline/60 h-[46px] backdrop-blur-2xl items-center max-w-[460px] px-5 flex justify-between text-2xl text-black/50 mx-auto">
+        <div className="w-full bg-isabelline/60 h-[46px] backdrop-blur-2xl items-center max-w-[460px] px-5 flex justify-between sm:text-base md:text-lg lg:text-2xl text-black/50 mx-auto">
           <Link
             to="home"
             activeClass="active"

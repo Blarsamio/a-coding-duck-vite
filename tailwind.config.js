@@ -34,6 +34,7 @@ module.exports = {
       backgroundImage: {
         about: "url('./assets/about.png')",
         services: "url('./assets/office.jpeg')",
+        work: "url('./assets/work.jpg')",
       },
     },
   },

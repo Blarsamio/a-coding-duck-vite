@@ -22,9 +22,8 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 h-[500px] mix-blend-lighten bg-top"
+            className="flex-1 h-[500px] mix-blend-lighten lg:bg-work lg:bg-cover bg-no-repeat hidden lg:block"
           >
-            <img src={Img} alt="about" className="object-cover w-full h-full" />
           </motion.div>
           {/* text */}
           <motion.div
@@ -32,48 +31,47 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1"
+            className="flex-1 flex flex-col justify-center"
           >
             <h2 className="h2 text-reseda">about me.</h2>
             <h3 className="h3 mb-4">
-              I'm a freelance front-end developer with over 2 years of
-              experience.
+              I'm a full-stack web developer and teacher with over 3 years of experience.
             </h3>
             <p className="mb-6">
               I specialize in creating fast and responsive websites that are
               accessible to everyone. I have a strong passion for web
               development and I love to stay up-to-date with the latest
-              technologies. I'm a self-taught developer and I'm always looking
-              for new challenges.
+              technologies, not only for my own personal growth but also to
+              share my knowledge with others.
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
                   {inView ? (
-                    <CountUp start={0} end={13} duration={3} className="" />
+                    <CountUp start={0} end={3} duration={3} className="" />
                   ) : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br /> Experience
+                  years of <br /> experience
                 </div>
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
-                  k+
+                  {inView ? <CountUp start={0} end={200} duration={3} /> : null}
+                  +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Projects <br /> Completed
+                  students <br /> taught
                 </div>
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2 pt-2">
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
-                  k+
+                  {inView ? <CountUp start={0} end={30} duration={3} /> : null}
+                  +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br /> Clients
+                  workshops <br /> given
                 </div>
               </div>
             </div>

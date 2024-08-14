@@ -23,10 +23,9 @@ const Work = () => {
                 my latest work
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                varius turpis nec ultricies lacinia.
+                here you can find some of the projects I've worked on or collaborated with recently.
               </p>
-              <button className="btn btn-sm self-start">view all projects</button>
+              <button className="btn btn-sm self-start hidden md:block">view all projects</button>
             </div>
             {/* image */}
             <div className="group relative overflow-hidden">

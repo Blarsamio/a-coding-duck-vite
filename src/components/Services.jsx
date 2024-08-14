@@ -8,7 +8,7 @@ const services = [
   {
     name: "web development",
     description:
-      "I specialize in creating fast and responsive websites that are accessible to everyone. I have a strong passion for web development.",
+      "I specialize in creating fast and responsive websites that are accessible to everyone, using modern technologies like Ruby on Rails, React and Next.js.",
     link: "Learn more",
   },
   {
@@ -18,15 +18,15 @@ const services = [
     link: "Learn more",
   },
   {
-    name: "SEO Optimization",
+    name: "mentorship",
     description:
-      "I can help you optimize your website for search engines to increase your visibility online. I have experience with on-page and off-page SEO techniques.",
+      "I offer one-on-one mentoring sessions for aspiring developers. I can help you with anything from learning the basics of web development to preparing for job interviews.",
     link: "Learn more",
   },
   {
-    name: "e-commerce solutions",
+    name: "workshops",
     description:
-      "I can help you set up an online store that is easy to manage and user-friendly. I have experience with popular e-commerce platforms like Shopify and WooCommerce.",
+      "I organize workshops on various topics related to web development. I have experience teaching both online and in-person workshops, also in a corporate setting.",
     link: "Learn more",
   },
 ];
@@ -42,7 +42,8 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-center bg-no-repeat mb-12 lg:mb-0"
+            className="flex-1 lg:bg-services lg:bg-center bg-no-repeat mb-12 lg:mb-0 hidden lg:block"
+            id="services-noshow"
           >
             <h3 className="h3 max-w-[455px] mb-16 text-transparent pointer-events-none">
               I'm a freelance front-end developer with over 2 years of
@@ -65,6 +66,7 @@ const Services = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
+            id="services-show"
           >
             {/* service list */}
             <div>
@@ -75,11 +77,11 @@ const Services = () => {
                     className="border-b border-black/20 h-[146px] lg:mb-[18px] flex"
                     key={index}
                   >
-                    <div className="max-w-[476px">
+                    <div className="max-w-[476px]">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6 text-reseda">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-tight">
+                      <p className="font-secondary leading-tight text-base lg:text-xl">
                         {description}
                       </p>
                     </div>
@@ -90,7 +92,7 @@ const Services = () => {
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
+                      <a href="#" className="text-gradient text-sm hidden md:block lg:block">
                         {link}
                       </a>
                     </div>
